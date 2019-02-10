@@ -21,10 +21,14 @@ frame[15]="      .c๑>⌄<っ.Loading"
 #ˋˊ
 #⌄ᗜ▿
 #๑⑉
+
+trap 'tput cnorm;exit' SIGTERM SIGINT
+tput civis
+tput sc
 while :; do
   for (( i=0; i<${#frame[*]}; i++ )); do
-    clear
     echo "${frame[i]}"
     sleep 0.06
+    tput rc
   done
 done
