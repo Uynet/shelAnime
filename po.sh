@@ -23,7 +23,7 @@ frame[15]="      .c๑>⌄<っ.Loading   "
 #⌄ᗜ▿
 #๑⑉
 
-trap 'tput cnorm;exit' SIGTERM SIGINT
+trap 'echo "";tput cnorm;exit' SIGTERM SIGINT
 tput civis
 tput sc
 while :; do
