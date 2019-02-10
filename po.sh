@@ -1,4 +1,4 @@
-declare -A frame
+declare -a frame
 
  frame[0]=".ro   ｡(*ˊ~ˋ)/🌟"
  frame[1]=" nO   ｡C*ˊ-ˋɔ۶=====⭐"
