@@ -27,7 +27,7 @@ tput civis
 tput sc
 while :; do
   for (( i=0; i<${#frame[*]}; i++ )); do
-    echo "${frame[i]}"
+    echo -n "${frame[i]}"
     sleep 0.06
     tput rc
   done
